@@ -1,6 +1,5 @@
 import { businessEntry } from "./Business.js"
-import { businessCopy, businessCopyManufacturing } from "./BusinessProvider.js"
-import { businessCopyNY } from "./BusinessProvider.js"
+import { businessCopy, businessCopyNY, businessCopyManufacturing } from "./BusinessProvider.js"
 
 export const businessList = () => {
     let contentElement = document.querySelector(".businessList")

@@ -115,16 +115,20 @@ export const businessCopy = () => {
       return businesses.slice()
 }
 
-  export const businessCopyNY = businesses.filter(bizObject => {
+export const businessCopyNY = businesses.filter(bizObject => {
     if (bizObject.addressStateCode === "NY") {
         return true
     }
     return false
 })
 
-export const businessCopyManufacturing = businesses.filter(bizObject =>{
+export const businessCopyManufacturing = businesses.filter(bizObject => {
     if (bizObject.companyIndustry === "Manufacturing") {
         return true
     }
     return false
+})
+
+export const listingAgents = businesses.map(agentObj => {
+    return { value: agentObj.purchasingAgent, value: agentObj.companyName, value: agentObj.phoneWork}
 })
