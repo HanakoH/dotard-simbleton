@@ -1,9 +1,9 @@
 export const businessEntry = (entry) => {
     return `
-        <section>
-            <h2>${entry.companyName}</h2>
-            <p>${entry.addressFullStreet}</p>
-            <p>${entry.addressCity}, ${entry.addressStateCode} ${entry.addressZipCode}</p>
+        <section class="entry">
+            <h2 class="companyName">${entry.companyName}</h2>
+            <p class="streetAddress">${entry.addressFullStreet}</p>
+            <p class="restAddress">${entry.addressCity}, ${entry.addressStateCode} ${entry.addressZipCode}</p>
         </section>
     `
 }

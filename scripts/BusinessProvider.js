@@ -111,6 +111,20 @@ const businesses = [
     }
   ];
 
-  export const businessCopy = () => {
+export const businessCopy = () => {
       return businesses.slice()
-  }
+}
+
+  export const businessCopyNY = businesses.filter(bizObject => {
+    if (bizObject.addressStateCode === "NY") {
+        return true
+    }
+    return false
+})
+
+export const businessCopyManufacturing = businesses.filter(bizObject =>{
+    if (bizObject.companyIndustry === "Manufacturing") {
+        return true
+    }
+    return false
+})
