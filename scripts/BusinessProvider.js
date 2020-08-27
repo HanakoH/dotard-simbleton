@@ -130,5 +130,9 @@ export const businessCopyManufacturing = businesses.filter(bizObject => {
 })
 
 export const listingAgents = businesses.map(agentObj => {
-    return { value: agentObj.purchasingAgent, value: agentObj.companyName, value: agentObj.phoneWork}
+    return { 
+      fullName: `${agentObj.purchasingAgent.nameFirst} ${agentObj.purchasingAgent.nameLast}`,
+      companyName: agentObj.companyName, 
+      phoneNumber: agentObj.phoneWork
+    }
 })

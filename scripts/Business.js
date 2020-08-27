@@ -7,3 +7,13 @@ export const businessEntry = (entry) => {
         </section>
     `
 }
+
+export const agentEntry = (entry) => {
+    return `
+        <section class="entry">
+            <h2 class="agentName">${entry.fullName}</h2>
+            <p class="agentCompany">${entry.companyName}</p>
+            <p class="agentPhone">${entry.phoneNumber}</p>
+        </section>
+    `
+}
